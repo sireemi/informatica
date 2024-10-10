@@ -1,0 +1,12 @@
+function diagonali(){
+    let dim = document.getElementById("numero").value;
+    let quadrato = "";
+    for(let i=0; i<dim; i++){
+        for(let j=0; j<dim; j++){
+            if(i==j || dim-j==i)
+                quadrato += "*";
+        }
+        quadrato += "\n";
+    }
+    document.getElementById("risultato").innerHTML = quadrato;
+}

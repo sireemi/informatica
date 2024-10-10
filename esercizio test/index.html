@@ -3,25 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="test.js"></script>
     <title>test esercizio</title>
 </head>
 <body>
-    <form>
         <input type="text" name="numero" id="numero"/>
-        <input type="submit"/>      
-    </form>
-    <script>
-        let dim = document.getElementById("numero").value;
-        let quadrato = "";
-        for(let i=0; i<dim; i++){
-            for(let j=0; j<dim; j++){
-                if(i==j || dim-j==i)
-                    quadrato += "*";
-            }
-            quadrato += "\n";
-        }
-        document.getElementById("risultato").innerHTML = quadrato;
-    </script>
+        <button onclick="diagonali();">Invia</button>
     <div id="risultato" name="risultato"></div>
 </body>
 </html>
