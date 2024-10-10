@@ -6,7 +6,7 @@ function diagonali(){
             if(i==j || dim-j==i)
                 quadrato += "*";
         }
-        quadrato += "\n";
+        quadrato += "<br>";
     }
     document.getElementById("risultato").innerHTML = quadrato;
 }
