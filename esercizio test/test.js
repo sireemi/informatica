@@ -4,7 +4,9 @@ function diagonali(){
     for(let i=0; i<dim; i++){
         for(let j=0; j<dim; j++){
             if(i==j)
-                quadrato += "* ";
+                quadrato += "*";
+            else
+                quadrato += " ";
         }
         quadrato += "<br>";
     }
