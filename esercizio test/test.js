@@ -3,8 +3,8 @@ function diagonali(){
     let quadrato = "";
     for(let i=0; i<dim; i++){
         for(let j=0; j<dim; j++){
-            if(i==j || dim-j==i)
-                quadrato += "*";
+            if(i==j)
+                quadrato += "* ";
         }
         quadrato += "<br>";
     }
